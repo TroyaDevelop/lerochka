@@ -1,0 +1,63 @@
+.love{
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content: space-around;
+    padding: 30px 0 30px 0;
+    
+    @include mobile{
+        flex-direction: column;
+        margin: 0 10px 0 10px;
+    }
+
+    .wrapper{
+        max-width: 500px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        @include mobile{
+            border: 1px solid purple;
+            margin: 10px 0 0 0;
+        }
+    }
+
+    .love__genheading{
+        color: blue;
+        margin: 0 0 10px 0;
+        text-align: center;
+    }
+    .love__genname{
+        font-size: 28px;
+        font-weight: 500;
+        margin: 0 0 10px;
+        text-align: center;
+    }
+    .love__genbutton{
+        min-height: 30px;
+        max-width: 300px;
+        background-color: pink;
+        border: 1px solid black;
+        border-radius: 40px 40px 40px 40px;
+    }
+
+    .why__genheading{
+        color: blue;
+        margin: 0 0 10px 0;
+        text-align: center;
+    }
+    .why__genname{
+        font-size: 28px;
+        font-weight: 500;
+        margin: 0 0 10px;
+        text-align: center;
+    }
+    .why__genbutton{
+        min-height: 30px;
+        max-width: 300px;
+        background-color: pink;
+        border: 1px solid black;
+        border-radius: 40px 40px 40px 40px;
+    }
+}

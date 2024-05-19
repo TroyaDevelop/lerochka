@@ -1,0 +1,238 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  background-color: #D25FD2;
+}
+
+h1 {
+  font-size: 32px;
+}
+
+.container {
+  max-width: 1138px;
+  margin: 0 auto;
+}
+
+pre {
+  overflow: hidden;
+}
+
+.love {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 30px 0 30px 0;
+}
+@media (max-width: 600px) {
+  .love {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0 10px 0 10px;
+  }
+}
+.love .wrapper {
+  max-width: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+@media (max-width: 600px) {
+  .love .wrapper {
+    border: 1px solid purple;
+    margin: 10px 0 0 0;
+  }
+}
+.love .love__genheading {
+  color: blue;
+  margin: 0 0 10px 0;
+  text-align: center;
+}
+.love .love__genname {
+  font-size: 28px;
+  font-weight: 500;
+  margin: 0 0 10px;
+  text-align: center;
+}
+.love .love__genbutton {
+  min-height: 30px;
+  max-width: 300px;
+  background-color: pink;
+  border: 1px solid black;
+  border-radius: 40px 40px 40px 40px;
+}
+.love .why__genheading {
+  color: blue;
+  margin: 0 0 10px 0;
+  text-align: center;
+}
+.love .why__genname {
+  font-size: 28px;
+  font-weight: 500;
+  margin: 0 0 10px;
+  text-align: center;
+}
+.love .why__genbutton {
+  min-height: 30px;
+  max-width: 300px;
+  background-color: pink;
+  border: 1px solid black;
+  border-radius: 40px 40px 40px 40px;
+}
+
+@-webkit-keyframes snow2 {
+  0% {
+    background-position: 0 0, 0 0;
+  }
+  100% {
+    background-position: 10% 600px, 10% 600px;
+  }
+}
+
+@keyframes snow2 {
+  0% {
+    background-position: 0 0, 0 0;
+  }
+  100% {
+    background-position: 10% 600px, 10% 600px;
+  }
+}
+@-webkit-keyframes snow1 {
+  from {
+    background-position: 0 -300px;
+  }
+  20% {
+    background-position: 20% -100px;
+  }
+  40% {
+    background-position: 30% 100px;
+  }
+  to {
+    background-position: 20% 700px;
+  }
+}
+@keyframes snow1 {
+  from {
+    background-position: 0 -300px;
+  }
+  20% {
+    background-position: 20% -100px;
+  }
+  40% {
+    background-position: 30% 100px;
+  }
+  to {
+    background-position: 20% 700px;
+  }
+}
+.header {
+  color: #94002D;
+  font-size: 42px;
+  font-weight: 700;
+  text-align: center;
+  padding: 30px 0 0 0;
+}
+
+.gallery_a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 0 10px 0;
+}
+
+.carousel {
+  width: 50%;
+  padding: 0 0 10px 0;
+}
+@media (max-width: 600px) {
+  .carousel {
+    width: 100%;
+  }
+}
+
+.snow {
+  position: relative;
+}
+.snow__big {
+  background-image: url("../img/snow1.png");
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-animation: snow1 18s linear infinite;
+          animation: snow1 18s linear infinite;
+  z-index: -1;
+}
+.snow__small {
+  background-image: url("../img/snow2.png"), url("../img/snow3.png");
+  -webkit-animation: snow2 10s linear infinite;
+          animation: snow2 10s linear infinite;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+}/*# sourceMappingURL=style.css.map */
